@@ -235,9 +235,9 @@ body.menu-open .menu-toggle span:last-child {
   width: 100%;
   padding: 160px max(22px, calc((100vw - 1180px)/2)) 110px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 430px);
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
-  gap: clamp(36px, 6vw, 86px);
+  gap: 56px;
   overflow: hidden;
 }
 
@@ -1189,142 +1189,100 @@ input:focus, textarea:focus {
 }
 
 
-.hero-logo-panel {
-  position: relative;
-  z-index: 2;
-  display: grid;
-  place-items: center;
+/* V12 — dark Ventures / Growth section */
+.pillars {
+  width: min(1180px, calc(100% - 44px));
+  margin: 0 auto;
+  padding: 76px clamp(22px, 4vw, 56px);
+  border-radius: 46px;
+  background:
+    radial-gradient(circle at 12% 12%, rgba(184, 169, 142, .16), transparent 32%),
+    radial-gradient(circle at 88% 10%, rgba(255, 255, 255, .07), transparent 28%),
+    #11100e;
+  color: var(--bg);
+  overflow: hidden;
 }
 
-.hero-logo-panel img {
-  width: min(420px, 32vw);
-  height: auto;
+.pillars .section-label,
+.pillars .pillar-eyebrow {
+  color: rgba(244, 240, 232, .62);
+}
+
+.pillars .section-intro h2,
+.pillars .pillar-content h3,
+.pillars .pillar-index {
+  color: var(--bg);
+}
+
+.pillars .pillar-index {
+  color: rgba(244, 240, 232, .24);
+}
+
+.pillars .pillar-content p {
+  color: rgba(244, 240, 232, .70);
+}
+
+.pillars .pillar-card {
+  border-color: rgba(244, 240, 232, .14);
+  background:
+    radial-gradient(circle at 88% 8%, rgba(184, 169, 142, .14), transparent 32%),
+    rgba(244, 240, 232, .035);
+  backdrop-filter: blur(8px);
+}
+
+.pillars .pillar-card:before {
+  border-color: rgba(244, 240, 232, .12);
+}
+
+/* V12 — final 887 lockup */
+.working-logo-lockup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+.working-logo-lockup .working-logo {
+  width: min(190px, 100%);
   display: block;
-  opacity: .96;
-  filter: drop-shadow(0 28px 60px rgba(17, 16, 14, .08));
-  animation: heroLogoFloat 8s ease-in-out infinite;
+  filter: invert(1);
+  opacity: .94;
 }
 
-.mobile-only {
-  display: none;
+.working-logo-lockup span {
+  color: rgba(244, 240, 232, .86);
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  max-width: 230px;
 }
 
-.desktop-only {
-  display: grid;
+.brand-logo {
+  object-fit: contain;
 }
 
-@keyframes heroLogoFloat {
-  0%, 100% {
-    transform: translateY(0) rotate(-1deg);
-  }
-  50% {
-    transform: translateY(-14px) rotate(1deg);
-  }
+.hero-logo-panel img,
+.mobile-hero-brand img,
+.brand-logo,
+.working-logo {
+  content: url("assets/887-logo-slick.svg");
 }
 
-
-/* Hero logo responsive placement */
 @media (max-width: 980px) {
-  .hero {
-    grid-template-columns: 1fr;
+  .pillars {
+    width: min(100% - 28px, 1180px);
+    padding: 58px 22px;
+    border-radius: 34px;
   }
 
-  .desktop-only {
-    display: none;
-  }
-
-  .mobile-only {
-    display: grid;
-  }
-
-  .hero-logo-panel.mobile-only {
-    margin: 18px 0 22px;
-    justify-content: start;
-  }
-
-  .hero-logo-panel.mobile-only img {
-    width: min(260px, 58vw);
-  }
-}
-
-@media (max-width: 640px) {
-  .hero-logo-panel.mobile-only {
-    margin: 16px 0 20px;
-  }
-
-  .hero-logo-panel.mobile-only img {
-    width: min(220px, 62vw);
-  }
-}
-
-
-/* Mobile hero refinement */
-.mobile-hero-brand {
-  display: none;
-}
-
-@media (max-width: 760px) {
-  .site-header {
-    display: none;
-  }
-
-  .mobile-nav {
-    display: none !important;
-  }
-
-  .hero {
-    min-height: auto;
-    padding-top: 32px;
-    padding-bottom: 72px;
-  }
-
-  .hero-inner {
-    display: flex;
-    flex-direction: column;
+  .working-logo-lockup {
     align-items: flex-start;
   }
 
-  .mobile-hero-brand {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 18px;
-    margin-bottom: 34px;
-  }
-
-  .mobile-hero-brand img {
-    width: min(220px, 58vw);
-    height: auto;
-    display: block;
-  }
-
-  .mobile-hero-brand span {
-    font-size: 12px;
-    letter-spacing: .18em;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: var(--muted);
-  }
-
-  .hero-kicker {
-    display: none;
-  }
-
-  .desktop-only {
-    display: none !important;
-  }
-
-  .hero-title {
-    margin-top: 0;
-  }
-}
-
-@media (max-width: 420px) {
-  .mobile-hero-brand img {
-    width: min(190px, 62vw);
-  }
-
-  .mobile-hero-brand {
-    margin-bottom: 28px;
+  .working-logo-lockup span {
+    text-align: left;
   }
 }

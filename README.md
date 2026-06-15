@@ -92,3 +92,9 @@ Domiciliation address completed: 17 rue Gioffredo, 06000 Nice, France.
 - Added new smoothed 887 logo as `assets/887-logo-smooth.svg`.
 - Integrated the new logo into the website header and legal page header.
 - Replaced the working-section text mark with the new SVG logo.
+
+## V12 changes
+
+- Added `assets/887-logo-slick.svg` based on the latest uploaded logo.
+- Set Ventures and Growth area on a black background.
+- Added “VENTURE & GROWTH STUDIO” under the 887 logo in the final black block.
