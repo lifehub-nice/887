@@ -235,9 +235,9 @@ body.menu-open .menu-toggle span:last-child {
   width: 100%;
   padding: 160px max(22px, calc((100vw - 1180px)/2)) 110px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 430px);
   align-items: center;
-  gap: 56px;
+  gap: clamp(36px, 6vw, 86px);
   overflow: hidden;
 }
 
@@ -1186,4 +1186,73 @@ input:focus, textarea:focus {
   color: var(--muted);
   font-weight: 700;
   background: rgba(244, 240, 232, .72);
+}
+
+
+.hero-logo-panel {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+}
+
+.hero-logo-panel img {
+  width: min(420px, 32vw);
+  height: auto;
+  display: block;
+  opacity: .96;
+  filter: drop-shadow(0 28px 60px rgba(17, 16, 14, .08));
+  animation: heroLogoFloat 8s ease-in-out infinite;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: grid;
+}
+
+@keyframes heroLogoFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(1deg);
+  }
+}
+
+
+/* Hero logo responsive placement */
+@media (max-width: 980px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: grid;
+  }
+
+  .hero-logo-panel.mobile-only {
+    margin: 18px 0 22px;
+    justify-content: start;
+  }
+
+  .hero-logo-panel.mobile-only img {
+    width: min(260px, 58vw);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-logo-panel.mobile-only {
+    margin: 16px 0 20px;
+  }
+
+  .hero-logo-panel.mobile-only img {
+    width: min(220px, 62vw);
+  }
 }
