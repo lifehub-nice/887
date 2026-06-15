@@ -5,7 +5,7 @@ Site statique bilingue FR / EN pour 887 Studio.
 ## Lancer en local
 
 ```bash
-cd 887-studio-site-v9-domain-legal
+cd 887-studio-site-v11-logo-integrated
 python3 -m http.server 5173
 ```
 
@@ -18,7 +18,7 @@ http://localhost:5173
 ## Déployer sur Vercel
 
 ```bash
-cd 887-studio-site-v9-domain-legal
+cd 887-studio-site-v11-logo-integrated
 vercel --prod
 ```
 
@@ -77,3 +77,18 @@ Domiciliation address completed: 17 rue Gioffredo, 06000 Nice, France.
 
 - Legal page updated with domiciliation address: 17 rue Gioffredo, 06000 Nice, France.
 - Domain planned: 887studio.fr.
+
+## V10 changes
+
+- Science Brief renamed to Praxio.
+- BECOME renamed to Blue Hour.
+- BizGame repositioned as AI deployment consulting for customer experience.
+- Project cards now align content from the top.
+- Added a logo placeholder area on each project card.
+- Added a small 887 stamp on each project card.
+
+## V11 changes
+
+- Added new smoothed 887 logo as `assets/887-logo-smooth.svg`.
+- Integrated the new logo into the website header and legal page header.
+- Replaced the working-section text mark with the new SVG logo.
