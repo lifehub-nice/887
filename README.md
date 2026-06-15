@@ -113,3 +113,11 @@ Domiciliation address completed: 17 rue Gioffredo, 06000 Nice, France.
 - Mobile keeps a standalone FR/EN toggle.
 - Top hero keeps 887 logo + “VENTURE & GROWTH STUDIO”.
 - Includes previous V13 removals/light pillars.
+
+## V15 changes
+
+- Navigation bar is now fixed on scroll.
+- Navigation bar uses a black background.
+- Desktop keeps logo + VENTURE & GROWTH STUDIO + À propos / Participations / Contact + FR/EN.
+- Mobile keeps the fixed black bar with logo + VENTURE & GROWTH STUDIO + FR/EN only.
+- Mobile top hero duplicate logo is hidden because the fixed black bar now carries the brand.

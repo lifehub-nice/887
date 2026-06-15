@@ -1557,3 +1557,135 @@ input:focus, textarea:focus {
     max-width: 240px;
   }
 }
+
+
+/* V15 — fixed black navigation on desktop and mobile */
+.site-header {
+  position: fixed !important;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1180px, calc(100% - 32px));
+  z-index: 150;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(244, 240, 232, .12) !important;
+  background: rgba(17, 16, 14, .92) !important;
+  color: var(--bg) !important;
+  backdrop-filter: blur(18px);
+  border-radius: 999px;
+  padding: 8px 12px;
+  box-shadow: 0 18px 60px rgba(17, 16, 14, .18);
+}
+
+.site-header .brand,
+.site-header .brand-descriptor,
+.site-header .main-nav,
+.site-header .main-nav a {
+  color: rgba(244, 240, 232, .88) !important;
+}
+
+.site-header .main-nav a:hover {
+  color: #fff !important;
+}
+
+.site-header .brand-logo {
+  width: 52px;
+  height: 52px;
+  filter: invert(1);
+}
+
+.site-header .lang-toggle {
+  border-color: rgba(244, 240, 232, .18) !important;
+  background: rgba(244, 240, 232, .07) !important;
+  color: rgba(244, 240, 232, .62) !important;
+}
+
+.site-header .lang-toggle span.active {
+  color: #fff !important;
+}
+
+.site-header .divider {
+  color: rgba(244, 240, 232, .36) !important;
+}
+
+/* Mobile: keep the black band fixed, only logo + descriptor + language toggle */
+@media (max-width: 760px) {
+  .site-header {
+    top: 10px;
+    width: calc(100% - 20px);
+    display: flex !important;
+    padding: 8px 10px;
+  }
+
+  .site-header .brand-lockup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+  }
+
+  .site-header .brand-logo {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+  }
+
+  .site-header .brand-descriptor {
+    display: inline-block !important;
+    max-width: 170px;
+    color: rgba(244, 240, 232, .86) !important;
+    font-size: 9px;
+    line-height: 1.25;
+    letter-spacing: .14em;
+    white-space: normal;
+  }
+
+  .site-header .main-nav {
+    display: none !important;
+  }
+
+  .site-header .header-actions {
+    display: flex !important;
+    margin-left: auto;
+  }
+
+  .site-header .lang-toggle {
+    display: inline-flex !important;
+    align-items: center;
+    padding: 8px 10px;
+    font-size: 10px;
+    flex-shrink: 0;
+  }
+
+  .mobile-lang-toggle {
+    display: none !important;
+  }
+
+  .hero {
+    padding-top: 110px;
+  }
+
+  .hero-top-lockup {
+    display: none !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .site-header .brand-descriptor {
+    max-width: 130px;
+    font-size: 8.5px;
+    letter-spacing: .12em;
+  }
+
+  .site-header .brand-logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .site-header .lang-toggle {
+    padding: 7px 8px;
+    font-size: 9px;
+  }
+}
