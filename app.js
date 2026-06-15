@@ -1,6 +1,7 @@
 const translations = {
   fr: {
     "nav.ventures": "Ventures",
+    "nav.about": "À propos",
     "nav.growth": "Growth",
     "nav.participations": "Participations",
     "nav.expertise": "Expertise",
@@ -20,8 +21,7 @@ const translations = {
     "method.structure.copy": "Transformer une intuition en offre, cible, angle commercial, récit, séquence d’activation, modèle économique ou plan de lancement.",
     "method.activate.title": "Activer",
     "method.activate.copy": "Ouvrir le réseau, engager les bons acteurs, piloter la prospection, représenter l’offre, lancer un test ou construire un nouveau business.",
-    "method.manifesto": "Moins de bruit. Plus de signal.<br />Moins de théâtre. Plus de mouvement.",
-    "pillars.label": "Deux piliers",
+        "pillars.label": "Deux piliers",
     "pillars.title": "Ventures & Growth",
     "ventures.eyebrow": "Ventures",
     "ventures.title": "Création et incubation de produits innovants.",
@@ -74,6 +74,7 @@ const translations = {
   },
   en: {
     "nav.ventures": "Ventures",
+    "nav.about": "À propos",
     "nav.growth": "Growth",
     "nav.participations": "Participations",
     "nav.expertise": "Expertise",
@@ -93,8 +94,7 @@ const translations = {
     "method.structure.copy": "Turn an intuition into an offer, a target, a commercial angle, a narrative, an activation sequence, a business model or a launch plan.",
     "method.activate.title": "Activate",
     "method.activate.copy": "Open the network, engage the right people, lead commercial activation, represent the offer, launch a test or build a new business.",
-    "method.manifesto": "Less noise. More signal.<br />Less theatre. More movement.",
-    "pillars.label": "Two pillars",
+        "pillars.label": "Two pillars",
     "pillars.title": "Ventures & Growth",
     "ventures.eyebrow": "Ventures",
     "ventures.title": "Creation and incubation of innovative products.",
@@ -232,8 +232,10 @@ function setLanguage(lang) {
     : "887 Studio — Ventures & Growth";
 }
 
-document.querySelector(".lang-toggle").addEventListener("click", () => {
-  setLanguage(currentLang === "fr" ? "en" : "fr");
+document.querySelectorAll(".lang-toggle, .mobile-lang-toggle").forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    setLanguage(currentLang === "fr" ? "en" : "fr");
+  });
 });
 
 const menuToggle = document.querySelector(".menu-toggle");

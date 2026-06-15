@@ -98,3 +98,18 @@ Domiciliation address completed: 17 rue Gioffredo, 06000 Nice, France.
 - Added `assets/887-logo-slick.svg` based on the latest uploaded logo.
 - Set Ventures and Growth area on a black background.
 - Added “VENTURE & GROWTH STUDIO” under the 887 logo in the final black block.
+
+## V13 changes
+
+- Removed manifesto line: “Moins de bruit. Plus de signal. Moins de théâtre. Plus de mouvement.”
+- Restored Ventures & Growth / Two pillars section to a light background.
+- Added 887 logo + “VENTURE & GROWTH STUDIO” at the very top of the landing hero.
+
+## V14 changes
+
+- Desktop navigation now shows 887 logo + “VENTURE & GROWTH STUDIO”.
+- Desktop navigation reduced to À propos / Participations / Contact + FR/EN.
+- Desktop navigation bar is hidden on mobile.
+- Mobile keeps a standalone FR/EN toggle.
+- Top hero keeps 887 logo + “VENTURE & GROWTH STUDIO”.
+- Includes previous V13 removals/light pillars.
