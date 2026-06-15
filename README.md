@@ -1,0 +1,79 @@
+# 887 Studio — site vitrine
+
+Site statique bilingue FR / EN pour 887 Studio.
+
+## Lancer en local
+
+```bash
+cd 887-studio-site-v9-domain-legal
+python3 -m http.server 5173
+```
+
+Puis ouvrir :
+
+```text
+http://localhost:5173
+```
+
+## Déployer sur Vercel
+
+```bash
+cd 887-studio-site-v9-domain-legal
+vercel --prod
+```
+
+## Formulaire de contact
+
+Le formulaire utilise FormSubmit avec l’adresse :
+
+```html
+https://formsubmit.co/vbenoist@gmail.com
+```
+
+Au premier envoi, FormSubmit peut demander de confirmer l’adresse email de réception.
+
+## Modifier les liens des participations
+
+Dans `app.js`, modifier `projects.fr` et `projects.en`, champ `link`.
+
+
+## V3 changes
+
+- SVG monogram replaced by text-based 887 mark.
+- Floating labels removed.
+- Background black thread / serpentine line added.
+- Typography changed to DM Serif Display + Manrope, with more readable spacing and line-height.
+
+## V4 changes
+
+- Removed the standalone strategy-to-movement statement block after the hero.
+
+## V5 changes
+
+- Removed the participations section title.
+- Replaced the working section title with “Producteur de mouvement.” / “Producer of movement.”
+
+## V6 changes
+
+- Reduced large display title sizes across the landing.
+- Reduced participation card titles, method titles and oversized numeric headings.
+
+## V7 changes
+
+- Contact form now posts to `https://formsubmit.co/vbenoist@gmail.com`.
+- Removed the Formspree placeholder note.
+
+## V8 legal changes
+
+- Added `mentions-legales.html`.
+- Added footer link to legal notice.
+- Added publisher information: Vincent BENOIST Entrepreneur individuel, SIRET 900 588 765 00017.
+- Added Vercel hosting information.
+- Added basic privacy/contact-form notice.
+
+Domiciliation address completed: 17 rue Gioffredo, 06000 Nice, France.
+
+## V9 changes
+
+- Legal page updated with domiciliation address: 17 rue Gioffredo, 06000 Nice, France.
+- Domain planned: 887studio.fr.
