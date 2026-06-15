@@ -268,6 +268,10 @@ const observer = new IntersectionObserver((entries) => {
 
 revealEls.forEach((el) => observer.observe(el));
 
+
+
+
+// Robust project modal logic
 const modal = document.querySelector(".modal");
 const modalTitle = document.getElementById("modal-title");
 const modalStatus = document.getElementById("modal-status");
@@ -277,38 +281,69 @@ const modalProblem = document.getElementById("modal-problem");
 const modalAnswer = document.getElementById("modal-answer");
 const modalLink = document.getElementById("modal-link");
 
+function unlockScroll() {
+  document.body.style.overflow = "";
+  document.documentElement.style.overflow = "";
+}
+
+function closeModal() {
+  if (!modal) return;
+  modal.classList.remove("is-open");
+  modal.setAttribute("aria-hidden", "true");
+  unlockScroll();
+}
+
 function openProject(projectKey) {
-  const project = projects[currentLang][projectKey];
-  modalTitle.textContent = project.title;
-  modalStatus.textContent = project.status;
-  modalYear.textContent = project.year;
-  modalCategory.textContent = project.category;
-  modalProblem.textContent = project.problem;
-  modalAnswer.textContent = project.answer;
-  modalLink.href = project.link;
-  modalLink.textContent = project.link === "#" ? translations[currentLang]["modal.link"] : project.link;
+  if (!modal) return;
+
+  const langProjects = projects[currentLang] || projects.fr;
+  const project = langProjects[projectKey];
+
+  if (!project) {
+    unlockScroll();
+    return;
+  }
+
+  if (modalTitle) modalTitle.textContent = project.title || "";
+  if (modalStatus) modalStatus.textContent = project.status || "";
+  if (modalYear) modalYear.textContent = project.year || "";
+  if (modalCategory) modalCategory.textContent = project.category || "";
+  if (modalProblem) modalProblem.textContent = project.problem || "";
+  if (modalAnswer) modalAnswer.textContent = project.answer || "";
+
+  if (modalLink) {
+    const linkLabel = translations[currentLang]?.["modal.link"] || "Lien à venir";
+    modalLink.href = project.link && project.link !== "#" ? project.link : "#";
+    modalLink.textContent = project.link && project.link !== "#" ? project.link : linkLabel;
+    modalLink.style.pointerEvents = project.link && project.link !== "#" ? "auto" : "none";
+    modalLink.style.opacity = project.link && project.link !== "#" ? "1" : ".55";
+  }
+
   modal.classList.add("is-open");
   modal.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
 }
 
-function closeModal() {
-  modal.classList.remove("is-open");
-  modal.setAttribute("aria-hidden", "true");
-  document.body.style.overflow = "";
-}
-
 document.querySelectorAll("[data-project]").forEach((card) => {
-  card.addEventListener("click", () => openProject(card.dataset.project));
+  card.addEventListener("click", (event) => {
+    event.preventDefault();
+    openProject(card.dataset.project);
+  });
 });
 
 document.querySelectorAll("[data-close-modal]").forEach((el) => {
-  el.addEventListener("click", closeModal);
+  el.addEventListener("click", (event) => {
+    event.preventDefault();
+    closeModal();
+  });
 });
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closeModal();
 });
+
+// Safety: if modal is hidden by any CSS/JS issue, never leave scroll locked.
+window.addEventListener("pageshow", unlockScroll);
 
 document.getElementById("year").textContent = new Date().getFullYear();
 

@@ -2012,3 +2012,39 @@ main,
     min-height: auto;
   }
 }
+
+
+/* Modal reliability fix */
+.modal {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 9999 !important;
+  display: none !important;
+  place-items: center !important;
+  padding: 22px !important;
+}
+
+.modal.is-open {
+  display: grid !important;
+}
+
+.modal-backdrop {
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(17, 16, 14, .42) !important;
+  backdrop-filter: blur(12px) !important;
+  cursor: pointer;
+}
+
+.modal-card {
+  position: relative !important;
+  z-index: 1 !important;
+  width: min(720px, 100%) !important;
+  max-height: min(780px, calc(100vh - 44px)) !important;
+  overflow: auto !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+body:has(.modal.is-open) {
+  overflow: hidden;
+}
