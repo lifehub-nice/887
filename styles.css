@@ -1690,28 +1690,6 @@ input:focus, textarea:focus {
   }
 }
 
-/* Emergency visibility fix */
-[data-reveal] {
-  opacity: 1 !important;
-  transform: none !important;
-}
-
-[data-reveal].is-visible {
-  opacity: 1 !important;
-  transform: none !important;
-}
-
-/* Ensure main content stays above background thread */
-main,
-.site-header,
-.site-footer,
-.modal,
-.hero,
-.section {
-  position: relative;
-  z-index: 2;
-}
-
 /* Fixed black navigation bar */
 .site-header {
   position: fixed !important;
@@ -1803,5 +1781,234 @@ main,
 
   .hero-top-lockup {
     display: none !important;
+  }
+}
+
+
+/* V16 — interaction, hierarchy and polish pass */
+
+/* Reveal animation restored, but safe */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .72s ease, transform .72s ease;
+  transition-delay: var(--delay, 0ms);
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Cursor shadow / orb */
+.cursor-orb {
+  position: fixed;
+  width: 240px;
+  height: 240px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(17, 16, 14, .10), rgba(184, 169, 142, .10) 34%, transparent 70%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity .45s ease;
+  mix-blend-mode: multiply;
+}
+
+/* Thread line: slightly thicker, always behind content */
+.background-thread {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(1440px, 100vw);
+  height: 5200px;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 0;
+  opacity: .24;
+}
+
+.thread-path {
+  stroke: #11100e;
+  stroke-width: 2.15;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+/* Content layers above thread */
+main,
+.site-header,
+.site-footer,
+.modal,
+.hero,
+.section {
+  position: relative;
+  z-index: 2;
+}
+
+/* Cards and blocks must mask the background thread */
+.pillar-card,
+.participation-card,
+.contact-form,
+.working-card,
+.modal-card,
+.site-header {
+  position: relative;
+  z-index: 3;
+}
+
+.pillar-card,
+.participation-card,
+.contact-form,
+.modal-card {
+  background-color: var(--paper) !important;
+}
+
+.participation-card {
+  min-height: 390px;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.project-card-top {
+  min-height: 58px;
+  margin-bottom: 24px;
+}
+
+.project-logo-slot {
+  min-height: 54px;
+  min-width: 132px;
+}
+
+.project-status {
+  margin-bottom: 0;
+}
+
+.participation-card h3 {
+  margin: 18px 0 12px !important;
+  min-height: 44px;
+  display: flex;
+  align-items: flex-start;
+  font-size: clamp(32px, 3vw, 40px) !important;
+  line-height: 1 !important;
+  letter-spacing: -.006em !important;
+}
+
+.participation-card p {
+  min-height: 54px;
+  max-width: 95%;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.project-meta {
+  margin-top: auto !important;
+}
+
+/* Typography coherence */
+.hero-title {
+  font-size: clamp(46px, 6.8vw, 88px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -.012em !important;
+}
+
+.hero-copy {
+  font-size: clamp(20px, 2vw, 28px) !important;
+  line-height: 1.28 !important;
+}
+
+.section-intro h2 {
+  font-size: clamp(38px, 4.6vw, 62px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -.012em !important;
+}
+
+.pillar-content h3,
+.working-card h2,
+.contact-copy h2 {
+  font-size: clamp(32px, 4vw, 52px) !important;
+  line-height: 1.04 !important;
+  letter-spacing: -.01em !important;
+}
+
+.method-item h2 {
+  font-size: clamp(32px, 3.2vw, 42px) !important;
+  line-height: 1.05 !important;
+}
+
+.expertise-list h3 {
+  font-size: clamp(28px, 3vw, 34px) !important;
+}
+
+/* Fixed black nav remains above everything */
+.site-header {
+  z-index: 999 !important;
+}
+
+/* Modal must be above fixed nav */
+.modal {
+  z-index: 1200 !important;
+}
+
+.modal.is-open {
+  display: grid !important;
+}
+
+.modal-backdrop {
+  z-index: 0;
+}
+
+.modal-card {
+  z-index: 1;
+}
+
+/* Favicon-driven logo consistency */
+.brand-logo,
+.hero-top-lockup img,
+.hero-logo-panel img,
+.working-logo {
+  object-fit: contain;
+}
+
+/* Mobile tuning */
+@media (max-width: 760px) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+
+  .cursor-orb {
+    display: none;
+  }
+
+  .background-thread {
+    opacity: .18;
+  }
+
+  .thread-path {
+    stroke-width: 1.8;
+  }
+
+  .hero-title {
+    font-size: clamp(42px, 13vw, 64px) !important;
+    line-height: 1.02 !important;
+  }
+
+  .hero-copy {
+    font-size: 20px !important;
+  }
+
+  .participation-card h3 {
+    min-height: auto;
+    font-size: 36px !important;
+  }
+
+  .participation-card p {
+    min-height: auto;
+  }
+
+  .project-card-top {
+    min-height: auto;
   }
 }

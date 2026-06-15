@@ -240,10 +240,16 @@ document.querySelectorAll(".lang-toggle, .mobile-lang-toggle").forEach((toggle) 
 
 const menuToggle = document.querySelector(".menu-toggle");
 const mobileNav = document.querySelector(".mobile-nav");
-menuToggle.addEventListener("click", () => document.body.classList.toggle("menu-open"));
-mobileNav.querySelectorAll("a").forEach((a) => {
-  a.addEventListener("click", () => document.body.classList.remove("menu-open"));
-});
+
+if (menuToggle) {
+  menuToggle.addEventListener("click", () => document.body.classList.toggle("menu-open"));
+}
+
+if (mobileNav) {
+  mobileNav.querySelectorAll("a").forEach((a) => {
+    a.addEventListener("click", () => document.body.classList.remove("menu-open"));
+  });
+}
 
 const revealEls = document.querySelectorAll("[data-reveal]");
 revealEls.forEach((el) => {
@@ -307,14 +313,24 @@ document.addEventListener("keydown", (event) => {
 document.getElementById("year").textContent = new Date().getFullYear();
 
 const orb = document.querySelector(".cursor-orb");
-let orbVisible = false;
-window.addEventListener("pointermove", (event) => {
-  if (!orbVisible) {
-    orb.style.opacity = ".9";
-    orbVisible = true;
-  }
-  orb.style.left = `${event.clientX}px`;
-  orb.style.top = `${event.clientY}px`;
-});
+
+if (orb && window.matchMedia("(pointer: fine)").matches) {
+  let orbVisible = false;
+
+  window.addEventListener("pointermove", (event) => {
+    if (!orbVisible) {
+      orb.style.opacity = ".9";
+      orbVisible = true;
+    }
+
+    orb.style.left = `${event.clientX}px`;
+    orb.style.top = `${event.clientY}px`;
+  });
+
+  window.addEventListener("pointerleave", () => {
+    orb.style.opacity = "0";
+    orbVisible = false;
+  });
+}
 
 setLanguage(currentLang);
