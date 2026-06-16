@@ -36,7 +36,7 @@ const translations = {
     "participations.label": "Nos participations",
         "participations.copy": "887 Studio développe, incube ou accompagne des produits et projets autour de problèmes concrets. Chaque participation doit créer plus de clarté, plus de lien ou plus d’action.",
     "project.cta": "Voir le projet",
-    "project.science.name": "Praxio",
+    "project.science.name": "Essore",
     "project.science.status": "En développement",
     "project.science.short": "Veille scientifique utile pour les praticiens.",
     "project.become.name": "Blue Hour",
@@ -109,7 +109,7 @@ const translations = {
     "participations.label": "Our participations",
         "participations.copy": "887 Studio develops, incubates or supports products and projects built around concrete problems. Each participation must create more clarity, more connection or more action.",
     "project.cta": "View project",
-    "project.science.name": "Praxio",
+    "project.science.name": "Essore",
     "project.science.status": "In development",
     "project.science.short": "Useful scientific intelligence for practitioners.",
     "project.become.name": "Blue Hour",
@@ -150,12 +150,12 @@ const translations = {
 const projects = {
   fr: {
     science: {
-      title: "Praxio",
+      title: "Essore",
       status: "En développement",
       year: "Création 2026",
       category: "Veille scientifique utile pour les praticiens",
       problem: "Les praticiens manquent de temps pour suivre la littérature scientifique utile à leur métier et transformer cette veille en quelque chose de lisible, prudent et exploitable.",
-      answer: "Praxio transforme les publications récentes en briefs courts, prudents et actionnables. Le produit aide les praticiens à gagner du temps, rester à jour et distinguer ce qui est solide, prometteur ou encore incertain.",
+      answer: "Essore transforme les publications récentes en briefs courts, prudents et actionnables. Le produit aide les praticiens à gagner du temps, rester à jour et distinguer ce qui est solide, prometteur ou encore incertain.",
       link: "#"
     },
     become: {
@@ -179,12 +179,12 @@ const projects = {
   },
   en: {
     science: {
-      title: "Praxio",
+      title: "Essore",
       status: "In development",
       year: "Created 2026",
       category: "Useful scientific intelligence for practitioners",
       problem: "Practitioners lack time to follow the scientific literature that matters to them and turn it into something readable, cautious and useful.",
-      answer: "Praxio turns recent publications into short, cautious and actionable briefs. The product helps practitioners save time, stay up to date and distinguish what is solid, promising or still uncertain.",
+      answer: "Essore turns recent publications into short, cautious and actionable briefs. The product helps practitioners save time, stay up to date and distinguish what is solid, promising or still uncertain.",
       link: "#"
     },
     become: {

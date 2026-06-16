@@ -80,7 +80,7 @@ Domiciliation address completed: 17 rue Gioffredo, 06000 Nice, France.
 
 ## V10 changes
 
-- Science Brief renamed to Praxio.
+- Science Brief renamed to Essore.
 - BECOME renamed to Blue Hour.
 - BizGame repositioned as AI deployment consulting for customer experience.
 - Project cards now align content from the top.
