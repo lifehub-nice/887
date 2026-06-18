@@ -2048,3 +2048,54 @@ main,
 body:has(.modal.is-open) {
   overflow: hidden;
 }
+
+
+/* KoHo typography system */
+:root {
+  --font-sans: "KoHo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: "KoHo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html,
+body,
+button,
+input,
+textarea,
+select {
+  font-family: "KoHo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.hero-title,
+.section-intro h2,
+.pillar-content h3,
+.participation-card h3,
+.working-card h2,
+.contact-copy h2,
+.method-item h2,
+.expertise-list h3 {
+  font-family: "KoHo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-weight: 500;
+}
+
+.hero-title,
+.section-intro h2 {
+  letter-spacing: -0.018em;
+}
+
+.brand-descriptor,
+.hero-top-lockup span,
+.working-logo-lockup span,
+.project-status,
+.section-label,
+.pillar-eyebrow,
+.lang-toggle,
+.mobile-lang-toggle {
+  font-family: "KoHo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-weight: 600;
+}
