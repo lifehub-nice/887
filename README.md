@@ -121,3 +121,9 @@ Domiciliation address completed: 17 rue Gioffredo, 06000 Nice, France.
 - Desktop keeps logo + VENTURE & GROWTH STUDIO + À propos / Participations / Contact + FR/EN.
 - Mobile keeps the fixed black bar with logo + VENTURE & GROWTH STUDIO + FR/EN only.
 - Mobile top hero duplicate logo is hidden because the fixed black bar now carries the brand.
+
+## V16 changes
+
+- Configured Vercel Web Analytics following the official Vercel documentation.
+- Added Web Analytics initialization script to both `index.html` and `mentions-legales.html`.
+- The analytics will track page views automatically once the site is deployed to Vercel with Web Analytics enabled in the dashboard.
