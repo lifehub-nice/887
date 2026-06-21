@@ -1435,6 +1435,10 @@ input:focus, textarea:focus {
   display: none;
 }
 
+.mobile-contact-cta {
+  display: none;
+}
+
 /* Keep the top hero lockup visible on desktop and mobile */
 .hero-top-lockup {
   display: flex;
@@ -1525,6 +1529,27 @@ input:focus, textarea:focus {
 
   .mobile-lang-toggle span.active {
     color: var(--ink);
+  }
+
+  .mobile-contact-cta {
+    position: fixed;
+    left: 50%;
+    bottom: 18px;
+    transform: translateX(-50%);
+    z-index: 120;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 13px 22px;
+    border-radius: 999px;
+    background: var(--ink);
+    color: var(--paper, #fbf8f2);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(17, 16, 14, .28);
   }
 
   .hero {
