@@ -39,7 +39,7 @@
         </p>
         <p>
           Adresse de domiciliation : <strong>17 rue Gioffredo, 06000 Nice, France</strong><br />
-          Email de contact : <strong>vbenoist@gmail.com</strong>
+          Email de contact : <strong class="obf-email" data-u="vbenoist" data-d="gmail.com"><noscript>vbenoist [at] gmail [dot] com</noscript></strong>
         </p>
       </article>
 
@@ -82,7 +82,7 @@
         </p>
         <p>
           Vous pouvez demander l’accès, la rectification ou la suppression de vos données en écrivant à :
-          <strong>vbenoist@gmail.com</strong>.
+          <strong class="obf-email" data-u="vbenoist" data-d="gmail.com"><noscript>vbenoist [at] gmail [dot] com</noscript></strong>.
         </p>
       </article>
 
@@ -110,5 +110,15 @@
     <a href="index.html">Retour au site</a>
     <span>© 2026</span>
   </footer>
+
+  <script>
+    document.querySelectorAll(".obf-email").forEach(function (el) {
+      var addr = el.dataset.u + "@" + el.dataset.d;
+      var a = document.createElement("a");
+      a.href = "mailto:" + addr;
+      a.textContent = addr;
+      el.appendChild(a);
+    });
+  </script>
 </body>
 </html>
