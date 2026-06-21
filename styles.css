@@ -2194,8 +2194,8 @@ button,
 
 /* Ajustement après suppression de la serif : éviter les titres trop massifs */
 .hero-title {
-  font-size: clamp(48px, 6.2vw, 84px) !important;
-  line-height: 1.02 !important;
+  font-size: clamp(34px, 4.3vw, 58px) !important;
+  line-height: 1.05 !important;
   font-weight: 500 !important;
 }
 
@@ -2222,7 +2222,7 @@ button,
 
 @media (max-width: 760px) {
   .hero-title {
-    font-size: clamp(42px, 12vw, 62px) !important;
+    font-size: clamp(30px, 8.5vw, 44px) !important;
   }
 
   .section-intro h2 {
