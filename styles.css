@@ -1264,12 +1264,7 @@ input:focus, textarea:focus {
   object-fit: contain;
 }
 
-.hero-logo-panel img,
-.mobile-hero-brand img,
-.brand-logo,
-.working-logo {
-  content: url("assets/887-logo-slick.svg");
-}
+/* Override "content" retiré : chaque <img> (header, working) utilise son src réel (887-mark.png). */
 
 @media (max-width: 980px) {
   .pillars {
@@ -2239,5 +2234,18 @@ button,
   .working-card h2,
   .contact-copy h2 {
     font-size: clamp(32px, 9vw, 44px) !important;
+  }
+}
+
+/* Hero landing logo = lockup complet GraphiqueCollé (monogramme + texte) */
+.hero-top-lockup img {
+  width: min(360px, 60vw) !important;
+  height: auto !important;
+  min-width: 0 !important;
+}
+
+@media (max-width: 760px) {
+  .hero-top-lockup img {
+    width: min(280px, 76vw) !important;
   }
 }
