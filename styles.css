@@ -1850,12 +1850,12 @@ input:focus, textarea:focus {
   transform: translateX(-50%);
   pointer-events: none;
   z-index: 0;
-  opacity: .24;
+  opacity: .42;
 }
 
 .thread-path {
   stroke: #11100e;
-  stroke-width: 2.15;
+  stroke-width: 3.4;
   stroke-linecap: round;
   stroke-linejoin: round;
   vector-effect: non-scaling-stroke;
@@ -2008,11 +2008,11 @@ main,
   }
 
   .background-thread {
-    opacity: .18;
+    opacity: .26;
   }
 
   .thread-path {
-    stroke-width: 1.8;
+    stroke-width: 2.4;
   }
 
   .hero-title {
