@@ -60,7 +60,7 @@
 
     <nav class="main-nav" aria-label="Navigation principale">
       <a href="#expertise" data-i18n="nav.about">À propos</a>
-      <!-- Masqué temporairement : <a href="#participations" data-i18n="nav.participations">Participations</a> -->
+      <a href="#participations" data-i18n="nav.participations">Participations</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
 
@@ -185,7 +185,44 @@
       </div>
     </section>
 
-    <!-- Section « Participations » retirée temporairement — ré-ajouter la tile Essore au moment de la communication. -->
+    <section class="participations section" id="participations">
+      <div class="section-intro" data-reveal>
+        <span class="section-label" data-i18n="participations.label">Nos participations</span>
+        <p data-i18n="participations.copy">
+          887 Studio développe, incube ou accompagne des produits et projets autour de problèmes concrets. Chaque participation doit créer plus de clarté, plus de lien ou plus d’action.
+        </p>
+      </div>
+
+      <div class="participation-grid">
+        <button class="participation-card" type="button" data-project="science" data-reveal>
+          <div class="project-card-top">
+            <div class="project-logo-slot"><img src="assets/essore-logo.png" alt="Essore" class="logo-essore" /></div>
+            <span class="project-stamp">887</span>
+          </div>
+          <span class="project-status" data-i18n="project.science.status">En ligne</span>
+          <h3 data-i18n="project.science.name">Essore</h3>
+          <p data-i18n="project.science.short">Veille scientifique utile pour les praticiens.</p>
+          <div class="project-meta">
+            <span>2026</span>
+            <span data-i18n="project.cta">Voir le projet</span>
+          </div>
+        </button>
+
+        <button class="participation-card" type="button" data-project="otiumly" data-reveal data-reveal-delay="90">
+          <div class="project-card-top">
+            <div class="project-logo-slot"><img src="assets/otiumly-logo.svg" alt="Otiumly" class="logo-otiumly" /></div>
+            <span class="project-stamp">887</span>
+          </div>
+          <span class="project-status" data-i18n="project.otiumly.status">En développement</span>
+          <h3 data-i18n="project.otiumly.name">Otiumly</h3>
+          <p data-i18n="project.otiumly.short">Le back-office des retraites et stages bien-être.</p>
+          <div class="project-meta">
+            <span>2026</span>
+            <span data-i18n="project.cta">Voir le projet</span>
+          </div>
+        </button>
+      </div>
+    </section>
 
     <section class="expertise section" id="expertise">
       <div class="section-intro" data-reveal>

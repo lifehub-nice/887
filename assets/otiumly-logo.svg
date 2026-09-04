@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Marque Otiumly. Un O ouvert : la lettre du nom, et la respiration que le
+       produit rend à l'organisateur. Formes épaisses et pleines pour rester
+       lisible à 16 pixels dans un onglet. Vert de marque #0BA86B. -->
+  <rect width="512" height="512" rx="115" fill="#0BA86B"/>
+  <path
+    d="M 315 153.8 A 118 118 0 1 1 197 153.8"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="74"
+    stroke-linecap="round"
+  />
+</svg>

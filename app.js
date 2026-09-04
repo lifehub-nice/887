@@ -37,8 +37,11 @@ const translations = {
         "participations.copy": "887 Studio développe, incube ou accompagne des produits et projets autour de problèmes concrets. Chaque participation doit créer plus de clarté, plus de lien ou plus d’action.",
     "project.cta": "Voir le projet",
     "project.science.name": "Essore",
-    "project.science.status": "En développement",
+    "project.science.status": "En ligne",
     "project.science.short": "Veille scientifique utile pour les praticiens.",
+    "project.otiumly.name": "Otiumly",
+    "project.otiumly.status": "En développement",
+    "project.otiumly.short": "Le back-office des retraites et stages bien-être.",
     "project.become.name": "Blue Hour",
     "project.become.status": "Concept en incubation",
     "project.become.short": "Expériences sportives et outdoor.",
@@ -110,8 +113,11 @@ const translations = {
         "participations.copy": "887 Studio develops, incubates or supports products and projects built around concrete problems. Each participation must create more clarity, more connection or more action.",
     "project.cta": "View project",
     "project.science.name": "Essore",
-    "project.science.status": "In development",
+    "project.science.status": "Live",
     "project.science.short": "Useful scientific intelligence for practitioners.",
+    "project.otiumly.name": "Otiumly",
+    "project.otiumly.status": "In development",
+    "project.otiumly.short": "The back office for wellness retreats and workshops.",
     "project.become.name": "Blue Hour",
     "project.become.status": "Concept in incubation",
     "project.become.short": "Sport and outdoor experiences.",
@@ -151,12 +157,21 @@ const projects = {
   fr: {
     science: {
       title: "Essore",
-      status: "En développement",
+      status: "En ligne",
       year: "Création 2026",
       category: "Veille scientifique utile pour les praticiens",
       problem: "Les praticiens manquent de temps pour suivre la littérature scientifique utile à leur métier et transformer cette veille en quelque chose de lisible, prudent et exploitable.",
       answer: "Essore transforme les publications récentes en briefs courts, prudents et actionnables. Le produit aide les praticiens à gagner du temps, rester à jour et distinguer ce qui est solide, prometteur ou encore incertain.",
-      link: "#"
+      link: "https://essore.fr"
+    },
+    otiumly: {
+      title: "Otiumly",
+      status: "En développement",
+      year: "Création 2026",
+      category: "Le back-office des retraites et stages bien-être",
+      problem: "Les organisateurs de retraites et stages bien-être pilotent toute l’intendance d’un séjour dans des tableurs et des virements dispersés : échéanciers de paiement, relances, régimes et allergies, attribution des chambres, communication pré-séjour.",
+      answer: "Otiumly réunit toute cette intendance dans un seul back-office clair : paiements et relances, régimes, chambres et préparation du séjour. Moins de charge mentale, plus de sérénité, en restant conforme au cadre français.",
+      link: "https://otiumly.com"
     },
     become: {
       title: "Blue Hour",
@@ -180,12 +195,21 @@ const projects = {
   en: {
     science: {
       title: "Essore",
-      status: "In development",
+      status: "Live",
       year: "Created 2026",
       category: "Useful scientific intelligence for practitioners",
       problem: "Practitioners lack time to follow the scientific literature that matters to them and turn it into something readable, cautious and useful.",
       answer: "Essore turns recent publications into short, cautious and actionable briefs. The product helps practitioners save time, stay up to date and distinguish what is solid, promising or still uncertain.",
-      link: "#"
+      link: "https://essore.fr"
+    },
+    otiumly: {
+      title: "Otiumly",
+      status: "In development",
+      year: "Created 2026",
+      category: "The back office for wellness retreats and workshops",
+      problem: "Organisers of wellness retreats and workshops run all the logistics of a stay across spreadsheets and scattered transfers: payment schedules, reminders, diets and allergies, room allocation, pre-stay communication.",
+      answer: "Otiumly brings all of this into one clear back office: payments and reminders, diets, rooms and stay preparation. Less mental load, more serenity, while staying compliant with the French framework.",
+      link: "https://otiumly.com"
     },
     become: {
       title: "Blue Hour",
