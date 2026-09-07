@@ -9,6 +9,8 @@
 2. `~/Dev/factory/CLAUDE.md` : le protocole de session. Ouvrir, faire, fermer.
 3. `~/Dev/factory/docs/PATTERNS.md` : trente-neuf motifs déjà payés une fois.
    **Se lit avant de concevoir, pas après.**
+3bis. `~/Dev/factory/doctrine/founder-model.md` : **comment Vincent tranche.** À lire pour
+   challenger comme il challengerait. Interdit d'en déduire une décision à sa place.
 4. `~/Dev/factory/docs/REGIMES.md` : ce que le régime ci-dessous impose.
 5. `~/Dev/factory/tracks/studio.md` : la prochaine action, et rien d'autre.
 
