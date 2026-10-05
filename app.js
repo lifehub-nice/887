@@ -45,6 +45,9 @@ const translations = {
     "project.muscule.name": "Muscule",
     "project.muscule.status": "Bientôt sur l’App Store",
     "project.muscule.short": "L’application iPhone de la salle de musculation.",
+    "project.emmanuelle.name": "Emmanuelle Benoist",
+    "project.emmanuelle.status": "En ligne",
+    "project.emmanuelle.short": "Praticienne en santé fonctionnelle à Nice.",
     "project.become.name": "Blue Hour",
     "project.become.status": "Concept en incubation",
     "project.become.short": "Expériences sportives et outdoor.",
@@ -124,6 +127,9 @@ const translations = {
     "project.muscule.name": "Muscule",
     "project.muscule.status": "Coming soon to the App Store",
     "project.muscule.short": "The iPhone app for the weight room.",
+    "project.emmanuelle.name": "Emmanuelle Benoist",
+    "project.emmanuelle.status": "Live",
+    "project.emmanuelle.short": "Functional health practitioner in Nice.",
     "project.become.name": "Blue Hour",
     "project.become.status": "Concept in incubation",
     "project.become.short": "Sport and outdoor experiences.",
@@ -188,6 +194,15 @@ const projects = {
       answer: "Muscule tient la série en trois choses : une charge, des reps, un timer. Autour, 413 exercices, un score de force sur 1000 qui suit la progression, et la séance résumée en une image à partager. Gratuit, sur iPhone.",
       link: "https://muscule.app"
     },
+    emmanuelle: {
+      title: "Emmanuelle Benoist",
+      status: "En ligne",
+      year: "Création 2026",
+      category: "Praticienne en santé fonctionnelle à Nice",
+      problem: "Fatigue persistante, troubles digestifs, sommeil perturbé, variations de poids : ces signaux ont souvent plusieurs origines qui se répondent. Regardés un par un, ils se comprennent mal.",
+      answer: "Emmanuelle Benoist accompagne en prévention santé globale, santé hormonale et santé musculaire, au cabinet à Nice ou en visio. Sa démarche LIVE FULLY repose sur six piliers : milieu, nutrition et micronutrition, repos, souffle, pensées, mouvement. Le site propose un test de cinq minutes pour situer son profil. Cet accompagnement ne remplace pas un avis, un diagnostic ou un traitement médical.",
+      link: "https://emmanuellebenoist.com"
+    },
     become: {
       title: "Blue Hour",
       status: "Concept en incubation",
@@ -234,6 +249,15 @@ const projects = {
       problem: "In the gym, between two sets, you have a minute and your hands are full. Training logs ask for too many screens and too many settings for that moment.",
       answer: "Muscule keeps a set down to three things: a load, reps, a timer. Around it, 413 exercises, a strength score out of 1000 that tracks progress, and the session summed up in one image to share. Free, on iPhone.",
       link: "https://muscule.app"
+    },
+    emmanuelle: {
+      title: "Emmanuelle Benoist",
+      status: "Live",
+      year: "Created 2026",
+      category: "Functional health practitioner in Nice",
+      problem: "Persistent fatigue, digestive troubles, disrupted sleep, weight changes: these signals often have several causes that feed one another. Looked at one by one, they are hard to understand.",
+      answer: "Emmanuelle Benoist supports people in overall preventive health, hormonal health and muscle health, at her practice in Nice or by video call. Her LIVE FULLY approach rests on six pillars: environment, nutrition and micronutrition, rest, breath, thoughts, movement. The site offers a five-minute test to place your own profile. This support does not replace medical advice, diagnosis or treatment.",
+      link: "https://emmanuellebenoist.com"
     },
     become: {
       title: "Blue Hour",
