@@ -509,9 +509,9 @@ body.menu-open .menu-toggle span:last-child {
 
 .participation-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
-  max-width: 780px;
+  max-width: 1180px;
   margin-inline: auto;
 }
 
@@ -1188,6 +1188,10 @@ input:focus, textarea:focus {
 .project-logo-slot .logo-otiumly {
   height: 42px;
   border-radius: 10px;
+}
+
+.project-logo-slot .logo-muscule {
+  height: 34px;
 }
 
 .project-stamp {
