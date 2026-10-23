@@ -43,7 +43,7 @@ const translations = {
     "project.otiumly.status": "En développement",
     "project.otiumly.short": "Le back-office des retraites et stages bien-être.",
     "project.muscule.name": "Muscule",
-    "project.muscule.status": "Bientôt sur l’App Store",
+    "project.muscule.status": "Sur l’App Store",
     "project.muscule.short": "L’application iPhone de la salle de musculation.",
     "project.emmanuelle.name": "Emmanuelle Benoist",
     "project.emmanuelle.status": "En ligne",
@@ -125,7 +125,7 @@ const translations = {
     "project.otiumly.status": "In development",
     "project.otiumly.short": "The back office for wellness retreats and workshops.",
     "project.muscule.name": "Muscule",
-    "project.muscule.status": "Coming soon to the App Store",
+    "project.muscule.status": "On the App Store",
     "project.muscule.short": "The iPhone app for the weight room.",
     "project.emmanuelle.name": "Emmanuelle Benoist",
     "project.emmanuelle.status": "Live",
@@ -187,11 +187,11 @@ const projects = {
     },
     muscule: {
       title: "Muscule",
-      status: "Bientôt sur l’App Store",
+      status: "Sur l’App Store",
       year: "Création 2026",
       category: "L’application iPhone de la salle de musculation",
       problem: "En salle, entre deux séries, on a une minute et les mains prises. Les carnets d’entraînement demandent trop d’écrans et trop de réglages pour ce moment-là.",
-      answer: "Muscule tient la série en trois choses : une charge, des reps, un timer. Autour, 413 exercices, un score de force sur 1000 qui suit la progression, et la séance résumée en une image à partager. Gratuit, sur iPhone.",
+      answer: "Muscule tient la série en trois choses : une charge, des reps, un timer. Autour, 418 exercices, un score de force sur 100 qui suit la progression, et la séance résumée en une image à partager. Gratuit, sur iPhone.",
       link: "https://muscule.app"
     },
     emmanuelle: {
@@ -243,11 +243,11 @@ const projects = {
     },
     muscule: {
       title: "Muscule",
-      status: "Coming soon to the App Store",
+      status: "On the App Store",
       year: "Created 2026",
       category: "The iPhone app for the weight room",
       problem: "In the gym, between two sets, you have a minute and your hands are full. Training logs ask for too many screens and too many settings for that moment.",
-      answer: "Muscule keeps a set down to three things: a load, reps, a timer. Around it, 413 exercises, a strength score out of 1000 that tracks progress, and the session summed up in one image to share. Free, on iPhone.",
+      answer: "Muscule keeps a set down to three things: a load, reps, a timer. Around it, 418 exercises, a strength score out of 100 that tracks progress, and the session summed up in one image to share. Free, on iPhone.",
       link: "https://muscule.app"
     },
     emmanuelle: {
