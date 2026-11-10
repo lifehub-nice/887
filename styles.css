@@ -1198,6 +1198,22 @@ input:focus, textarea:focus {
   height: 42px;
 }
 
+.project-logo-slot .logo-askmarie {
+  height: 42px;
+}
+
+.project-logo-slot .logo-ymmobility {
+  height: 40px;
+}
+
+.project-logo-slot .logo-culturesante {
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: .02em;
+  text-transform: none;
+}
+
 .project-stamp {
   flex-shrink: 0;
   width: 42px;

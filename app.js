@@ -48,6 +48,15 @@ const translations = {
     "project.emmanuelle.name": "Emmanuelle Benoist",
     "project.emmanuelle.status": "En ligne",
     "project.emmanuelle.short": "Praticienne en santé fonctionnelle à Nice.",
+    "project.askmarie.name": "Ask Marie",
+    "project.askmarie.status": "En ligne",
+    "project.askmarie.short": "Le tirage de tarot guidé par la voix de Marie.",
+    "project.ymmobility.name": "YM Mobility at Work",
+    "project.ymmobility.status": "En développement",
+    "project.ymmobility.short": "Le site du coaching sportif en entreprise.",
+    "project.culturesante.name": "Culture Santé",
+    "project.culturesante.status": "En écriture",
+    "project.culturesante.short": "Un livre pour comprendre sa santé et agir au quotidien.",
     "project.become.name": "Blue Hour",
     "project.become.status": "Concept en incubation",
     "project.become.short": "Expériences sportives et outdoor.",
@@ -130,6 +139,15 @@ const translations = {
     "project.emmanuelle.name": "Emmanuelle Benoist",
     "project.emmanuelle.status": "Live",
     "project.emmanuelle.short": "Functional health practitioner in Nice.",
+    "project.askmarie.name": "Ask Marie",
+    "project.askmarie.status": "Live",
+    "project.askmarie.short": "A tarot reading guided by Marie's voice.",
+    "project.ymmobility.name": "YM Mobility at Work",
+    "project.ymmobility.status": "In development",
+    "project.ymmobility.short": "The website for corporate sports coaching.",
+    "project.culturesante.name": "Culture Santé",
+    "project.culturesante.status": "Being written",
+    "project.culturesante.short": "A book to understand your health and act on it every day.",
     "project.become.name": "Blue Hour",
     "project.become.status": "Concept in incubation",
     "project.become.short": "Sport and outdoor experiences.",
@@ -203,6 +221,33 @@ const projects = {
       answer: "Emmanuelle Benoist accompagne en prévention santé globale, santé hormonale et santé musculaire, au cabinet à Nice ou en visio. Sa démarche LIVE FULLY repose sur six piliers : milieu, nutrition et micronutrition, repos, souffle, pensées, mouvement. Le site propose un test de cinq minutes pour situer son profil. Cet accompagnement ne remplace pas un avis, un diagnostic ou un traitement médical.",
       link: "https://emmanuellebenoist.com"
     },
+    askmarie: {
+      title: "Ask Marie",
+      status: "En ligne",
+      year: "Création 2026",
+      category: "Loisir et divertissement",
+      problem: "Se faire tirer les cartes, c'est d'abord un moment avec quelqu'un. Les applications de tarot donnent un texte générique, sans voix et sans personne en face.",
+      answer: "Ask Marie recrée une séance avec Marie, tireuse de cartes à Madrid. Elle parle du début à la fin : on choisit un thème, on respire, on mélange, on coupe, on choisit trois arcanes du Tarot de Marseille, puis elle les lit une à une. En espagnol et en français.",
+      link: "https://ask-marie.vercel.app"
+    },
+    ymmobility: {
+      title: "YM Mobility at Work",
+      status: "En développement",
+      year: "Création 2026",
+      category: "Site vitrine, coaching sportif en entreprise",
+      problem: "Une entreprise qui veut faire bouger ses équipes doit comprendre vite ce qu'on lui propose : le format, le cadre, le prix, et qui viendra dans ses locaux.",
+      answer: "Le site de YM Mobility at Work présente les séances collectives de Yannis Martinon à Paris : functional training, running et mobilité dans les locaux de l'entreprise, encadrés par un coach. Chaque chiffre cité renvoie à sa source.",
+      link: "#"
+    },
+    culturesante: {
+      title: "Culture Santé",
+      status: "En écriture",
+      year: "Création 2026",
+      category: "Livre",
+      problem: "Les conseils de santé arrivent par morceaux, souvent contradictoires. Il manque un ouvrage qui dise simplement ce qu'être en bonne santé veut dire et par où commencer.",
+      answer: "Culture Santé explique comment le corps répond, puis montre où agir au quotidien, sur six terrains, et comment tenir dans la durée. Un livre en six parties, nourri par la littérature scientifique et par la pratique d'Emmanuelle Benoist.",
+      link: "#"
+    },
     become: {
       title: "Blue Hour",
       status: "Concept en incubation",
@@ -258,6 +303,33 @@ const projects = {
       problem: "Persistent fatigue, digestive troubles, disrupted sleep, weight changes: these signals often have several causes that feed one another. Looked at one by one, they are hard to understand.",
       answer: "Emmanuelle Benoist supports people in overall preventive health, hormonal health and muscle health, at her practice in Nice or by video call. Her LIVE FULLY approach rests on six pillars: environment, nutrition and micronutrition, rest, breath, thoughts, movement. The site offers a five-minute test to place your own profile. This support does not replace medical advice, diagnosis or treatment.",
       link: "https://emmanuellebenoist.com"
+    },
+    askmarie: {
+      title: "Ask Marie",
+      status: "Live",
+      year: "Created 2026",
+      category: "Leisure and entertainment",
+      problem: "Having your cards read is first a moment with someone. Tarot apps hand out generic text, with no voice and no one across the table.",
+      answer: "Ask Marie recreates a session with Marie, a card reader in Madrid. She speaks from start to finish: you pick a theme, breathe, shuffle, cut, choose three Tarot de Marseille arcana, and she reads them one by one. In Spanish and French.",
+      link: "https://ask-marie.vercel.app"
+    },
+    ymmobility: {
+      title: "YM Mobility at Work",
+      status: "In development",
+      year: "Created 2026",
+      category: "Showcase website, corporate sports coaching",
+      problem: "A company that wants its teams to move needs to grasp the offer quickly: the format, the setting, the price, and who will come to its offices.",
+      answer: "The YM Mobility at Work website presents Yannis Martinon's group sessions in Paris: functional training, running and mobility in the company's own offices, led by a coach. Every figure quoted links to its source.",
+      link: "#"
+    },
+    culturesante: {
+      title: "Culture Santé",
+      status: "Being written",
+      year: "Created 2026",
+      category: "Book",
+      problem: "Health advice arrives in pieces, often contradictory. What is missing is a book that says simply what being healthy means and where to start.",
+      answer: "Culture Santé explains how the body responds, then shows where to act every day, across six areas, and how to keep going over time. A book in six parts, built on the scientific literature and on Emmanuelle Benoist's practice.",
+      link: "#"
     },
     become: {
       title: "Blue Hour",
